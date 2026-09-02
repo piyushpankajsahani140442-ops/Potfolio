@@ -1,0 +1,165 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(244, 246, 249);
+  color: rgb(51, 51, 51);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: rgb(26, 37, 47);
+  color: rgb(255, 255, 255);
+  padding: 30px 20px;
+}
+
+.header-container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.header-text h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.header-text p {
+  margin-top: 5px;
+  color: rgb(189, 195, 199);
+}
+
+/* Profile Photo Circle */
+.profile-photo {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: 3px solid rgb(26, 188, 156);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.profile-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Navigation Links Bar */
+nav {
+  background-color: rgb(44, 62, 80);
+  text-align: center;
+  padding: 10px;
+}
+
+nav a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: rgb(26, 188, 156);
+}
+
+/* Content Width Container */
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+/* Card Boxes for Each Section */
+.card {
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  border: 1px solid rgb(221, 221, 221);
+}
+
+.card h2 {
+  color: rgb(26, 37, 47);
+  margin-top: 0;
+  border-bottom: 2px solid rgb(26, 188, 156);
+  padding-bottom: 5px;
+}
+
+.sub-text {
+  color: rgb(127, 140, 141);
+  font-size: 14px;
+}
+
+/* Skills Layout */
+.skills-box {
+  margin-top: 10px;
+}
+
+.badge {
+  background-color: rgb(232, 248, 245);
+  color: rgb(22, 160, 133);
+  padding: 6px 12px;
+  margin: 4px;
+  display: inline-block;
+  border-radius: 15px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Project Styling */
+.project-box {
+  background-color: rgb(249, 249, 249);
+  border-left: 4px solid rgb(26, 188, 156);
+  padding: 10px 15px;
+  margin-top: 15px;
+}
+
+.project-box h3 {
+  margin: 0 0 5px 0;
+  color: rgb(44, 62, 80);
+}
+
+.tech {
+  color: rgb(22, 160, 133);
+  font-weight: bold;
+  font-size: 13px;
+}
+
+/* Footer Styling */
+footer {
+  background-color: rgb(26, 37, 47);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+/* Media Query for Mobile Responsiveness */
+@media screen and (max-width: 600px) {
+  .header-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .profile-photo {
+    width: 90px;
+    height: 90px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 5px;
+  }
+  
+  .container {
+    width: 95%;
+  }
+
+  .header-text h1 {
+    font-size: 24px;
+  }
+}
